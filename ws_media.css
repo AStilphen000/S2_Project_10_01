@@ -14,12 +14,14 @@
 */
 
 /* VideoPlayer Styles */
-video {
+/* The video styles that I used made the video displayed as a block element and not in a random spot on the page. The width just adjusts the positon of the content, as well as margin just adjusts the outer portion of the box model creating pace around an element outside of a border. */
+video { 
     display: block;
     width: 90%;
     margin: 5px auto;
 }
 
+/* The media querie for the videoplayer styles is so the user can access the webpage from different and specific devices. The "only screen and (min-width: 521)" matches the screensw with a minimum width of 521 pixels.  */
 @media only screen and (min-width: 521px) {
     video {
         width: 360px;
@@ -28,6 +30,7 @@ video {
     }
 }
 /* Track Styles */
+/* The track styles was simple I just needed to effect the cue which is to format the appearence of the cues within a media clip. */
 ::cue {
     font: 1.3em sans-serif;
     color: rgb(221, 128, 160);
